@@ -14,7 +14,7 @@ namespace MontyTests
         [TestMethod]
         public void CheckThatChanceOfWinningIsNotTheSameIfKeepingOrChangingDoors()
         {
-            //1 is switch, 2 is keep                   
+            //1 is switch, 0 is keep                   
             int keptDoor = test.RunGame(numberOfSimulations, 0);
             int switchedDoor = test.RunGame(numberOfSimulations, 1);
 

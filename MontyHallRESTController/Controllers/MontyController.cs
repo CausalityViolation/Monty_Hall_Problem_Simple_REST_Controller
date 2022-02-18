@@ -14,7 +14,7 @@ namespace MontyHallRESTController.Controllers
             MontyHallProblem mhp = new();
             var result = mhp.RunGame(numberOfSimulations, switchDoor).ToString();
 
-            string reply = $"You win {result} out of {numberOfSimulations} times!\nTry running the simulation, but this time switching the door!";
+            string reply = $"You win {result} out of {numberOfSimulations} times!\nTry running the simulation again, but this time switching the door!";
 
             if (switchDoor == 1)
             {
